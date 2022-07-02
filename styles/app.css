@@ -4,8 +4,9 @@
 :root {
    --text-color: #333333;
    --shadow-color: rgba(19, 182, 255, 0.24);
-   --app-bg-color: #fff;
+   --app-bg-color: #f2f2f24f;
    --section-bg-color: #fff;
+   --primary-color: #0abead;
 }
 
 html {
@@ -15,4 +16,137 @@ html {
 body {
    font-size: 1.6rem;
    font-family: "Poppins";
+   background-color: var(--app-bg-color);
 }
+
+/* header start */
+
+/* navbar start */
+
+.header {
+}
+
+.navbar-wraper {
+   height: 11rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   box-shadow: 0 5px 70px var(--shadow-color);
+   line-height: 11rem;
+   padding-right: 1.5rem;
+   padding-left: 1.5rem;
+   position: relative;
+}
+
+.header__logo {
+   height: 100%;
+   transition: all 0.2s;
+}
+
+.header__logo-link {
+   text-decoration: none;
+   font-size: 5rem;
+   font-family: "Poppins Black";
+   color: var(--primary-color);
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.header__logo:hover {
+   display: inline-block;
+   transform: scale(1.2);
+}
+
+.menu-toggler {
+   color: var(--primary-color);
+   font-size: 3rem;
+   width: 3rem;
+   height: 3rem;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.menu-uncollapse {
+   font-size: 3rem;
+   position: absolute;
+   bottom: 0;
+   transition: all 0.2s;
+}
+
+.menu-collapse {
+   font-size: 2.5rem;
+   position: absolute;
+   top: -7rem;
+   transition: all 0.2s;
+}
+
+.menu-uncollapse--show {
+   bottom: -7rem;
+}
+
+.menu-collapse--show {
+   top: 0;
+}
+
+/* collapse menu start */
+
+.menu {
+   position: absolute;
+   top: 100%;
+   right: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   background-color: var(--app-bg-color);
+   padding: 0rem 0;
+   height: 0;
+   overflow: hidden;
+   transition: all 0.2s;
+}
+
+.menu__show {
+   padding: 1.5rem 0;
+   height: 35.2rem;
+   box-shadow: 0 -5px 25px var(--shadow-color) inset;
+   transition: all 0.2s;
+}
+
+.menu__items {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: "Poppins Medium";
+   transition: all 0.2s;
+}
+
+.menu__item {
+   line-height: 1.6rem;
+   list-style: none;
+   padding: 1.5rem;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+
+.menu__item-link {
+   text-decoration: none;
+   color: var(--text-color);
+   transition: all 0.2s;
+}
+
+.menu__item-link:hover {
+   color: var(--primary-color);
+   border-bottom-left-radius: 1rem;
+   border-bottom: 0.3rem solid var(--primary-color);
+}
+
+.active .menu__item-link {
+   color: var(--primary-color);
+}
+
+/* collapse menu end */
+
+/* navbar end */
+
+/* header end */
