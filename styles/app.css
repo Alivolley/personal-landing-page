@@ -4,9 +4,10 @@
 :root {
    --text-color: #333333;
    --shadow-color: rgba(19, 182, 255, 0.24);
-   --app-bg-color: #f2f2f24f;
+   --app-bg-color: #fcfcfc;
    --section-bg-color: #fff;
    --primary-color: #0abead;
+   --orange: #f57f17;
 }
 
 html {
@@ -19,11 +20,29 @@ body {
    background-color: var(--app-bg-color);
 }
 
+/* component classes start */
+
+.btn-basic {
+   font-family: "Poppins SemiBold";
+   text-decoration: none;
+   padding: 1.2rem 4rem;
+   color: var(--section-bg-color);
+   border-radius: 3rem;
+   font-size: 1.4rem;
+}
+
+/* component classes end */
+
 /* header start */
 
 /* navbar start */
 
 .header {
+   background: url("../images-icons/shapes/header-shape.svg");
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: 60rem;
+   padding-bottom: 5rem;
 }
 
 .navbar-wraper {
@@ -148,5 +167,96 @@ body {
 /* collapse menu end */
 
 /* navbar end */
+
+/* header content start */
+
+.header-row {
+   flex-direction: column;
+   margin-top: 8rem;
+   align-items: center;
+}
+
+.header-avatar {
+   width: 100%;
+   height: auto;
+   border-radius: 100%;
+   object-fit: cover;
+   box-shadow: 0 0 20px var(--shadow-color);
+   border: 1.5rem solid var(--app-bg-color);
+}
+
+.header-content {
+   margin-top: 1rem;
+   margin-bottom: 6rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.header-content__introduce {
+   font-family: "Poppins SemiBold";
+   color: var(--primary-color);
+   font-size: 2rem;
+}
+
+.header-content__introduce span {
+   color: var(--orange);
+}
+
+.header-content__title {
+   font-family: "Poppins Bold";
+   color: var(--primary-color);
+   font-size: 3rem;
+   line-height: 3.8rem;
+   margin-top: 1.6rem;
+   margin-bottom: 1.6rem;
+}
+
+.header-content__text {
+   font-family: "Poppins";
+   font-size: 1.5rem;
+   color: #333333ab;
+   max-width: 50rem;
+}
+
+.header-content__buttuns {
+   display: flex;
+   flex-direction: column;
+   margin-top: 3rem;
+}
+
+.header-content__btn {
+   background-color: var(--primary-color);
+   box-shadow: 0 5px 5px var(--shadow-color);
+   display: inline-block;
+}
+
+.header-content__btn:hover .header-content-icon {
+   animation: iconMover 0.2s alternate infinite;
+}
+
+.header-content__btn--orange {
+   background-color: var(--orange);
+   margin-top: 2rem;
+   box-shadow: 0 5px 5px rgba(245, 127, 23, 0.24);
+}
+
+.header-content-icon {
+   padding-left: 1rem;
+   font-size: 1.8rem;
+}
+
+@keyframes iconMover {
+   0% {
+      transform: scale(1);
+   }
+
+   100% {
+      transform: scale(1.2);
+   }
+}
+
+/* header content end */
 
 /* header end */
