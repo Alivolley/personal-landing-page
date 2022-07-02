@@ -99,6 +99,18 @@
       margin-top: 0;
       margin-left: 2rem;
    }
+
+   .about-us__links {
+      flex-direction: row;
+      max-width: none;
+      margin-right: auto;
+      margin-left: 0;
+   }
+
+   .about-us__link--orange {
+      margin-left: 1.5rem;
+      margin-top: 0;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 800px) {
@@ -140,6 +152,10 @@
    .header-content {
       align-items: flex-start;
       text-align: start;
+   }
+
+   .about-us-row {
+      flex-direction: row;
    }
 }
 
