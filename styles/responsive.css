@@ -5,7 +5,46 @@
    }
 }
 
+@media (max-width: 310px) {
+   .resume-category:first-child {
+      margin-top: 3rem !important;
+   }
+
+   .resume-category:last-child {
+      margin-bottom: 3rem !important;
+   }
+}
+
+@media (max-width: 490px) {
+   .resume-category {
+      font-size: 1.3rem !important;
+      padding: 0 0.8rem !important;
+   }
+}
+
 /* sm */
+
+@media (max-width: 576px) {
+   .resume-category {
+      font-size: 1.4rem;
+   }
+
+   .explain-head__date {
+      display: none;
+   }
+
+   .resum-explain--show {
+      border: none;
+   }
+
+   .explain-head__title::before {
+      content: none;
+   }
+
+   .resume-category {
+      padding: 0 1rem;
+   }
+}
 
 @media (min-width: 576px) {
    .container {
@@ -32,6 +71,45 @@
 }
 
 /* md */
+
+@media (max-width: 768px) {
+   .resume-categories {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      min-height: auto;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .resume-categories::before {
+      content: none;
+   }
+
+   .resume-category {
+      background-color: var(--primary-color);
+      margin: 1rem 2rem;
+      /* margin-bottom: 4rem; */
+      padding: 0 3rem;
+      border-radius: 5rem;
+   }
+
+   .resume-category:first-child {
+      margin-top: auto;
+   }
+
+   .resume-category::before {
+      content: none;
+   }
+
+   .resume-category__icon {
+      display: none;
+   }
+
+   .explain-head__date {
+      font-size: 1.2rem;
+   }
+}
 
 @media (min-width: 768px) {
    .container {
@@ -111,15 +189,30 @@
       margin-left: 1.5rem;
       margin-top: 0;
    }
+
+   .services-row {
+      flex-direction: row;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 800px) {
    .menu__item-link {
       font-size: 1.4rem;
    }
+   .resumes-explain-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
 }
 
 /* lg */
+
+@media (min-width: 768px) and (max-width: 992px) {
+   .resume-categories {
+      min-height: 54.6rem;
+   }
+}
 
 @media (min-width: 992px) {
    .container {
@@ -182,6 +275,10 @@
    .header-avatar {
       width: 42rem;
       height: 42rem;
+   }
+
+   .resumes-row {
+      justify-content: center;
    }
 }
 

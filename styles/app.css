@@ -428,4 +428,236 @@ body {
 
 /* about us end  */
 
+/* services srart */
+
+.services {
+   padding-bottom: 14rem;
+}
+
+.services-row {
+   flex-direction: column;
+}
+
+.services-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #fff;
+   position: relative;
+   overflow: hidden;
+}
+
+.card-icon {
+   padding-top: 6rem;
+   padding-bottom: 4rem;
+   z-index: 100;
+}
+
+.card-title {
+   padding-bottom: 2rem;
+   z-index: 100;
+}
+
+.card-text {
+   text-align: center;
+   padding: 0 1.5rem 6rem 1.5rem;
+   z-index: 100;
+}
+
+.services-card--first {
+   background-color: #8540ff;
+   position: relative;
+   z-index: 100;
+}
+
+.services-card--second {
+   background-color: #ffc50c;
+   position: relative;
+}
+
+.services-card--third {
+   background-color: #ec407a;
+   position: relative;
+}
+
+.services-card--forth {
+   background-color: #ff6331;
+   position: relative;
+}
+
+.services-card--fifth {
+   background-color: #13b6ff;
+   position: relative;
+}
+
+.services-card--sixth {
+   background-color: #49af46;
+   position: relative;
+}
+
+.card-shape {
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: -1rem;
+   width: 100%;
+}
+
+.card-shape svg {
+   width: 100%;
+   height: 100%;
+}
+
+/* services end */
+
+/* resume start */
+
+.resumes {
+   box-shadow: 0 0 50px var(--shadow-color);
+   padding-bottom: 14rem;
+   padding-top: 8rem;
+   transform: skewY(-5deg);
+}
+
+.resumes .container {
+   transform: skewY(5deg);
+}
+
+.resumes-row {
+   padding-top: 3rem;
+}
+
+.resume-categories {
+   background-color: var(--app-bg-color);
+   box-shadow: 0 0 50px var(--shadow-color);
+   height: 100%;
+   position: relative;
+   z-index: 10;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   min-height: 49.1rem;
+}
+
+.resume-categories::before {
+   position: absolute;
+   content: "";
+   width: 4rem;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background-color: var(--primary-color);
+   z-index: -1;
+}
+
+.resume-category {
+   list-style-type: none;
+   margin-top: 2rem;
+   display: flex;
+   align-items: center;
+   font-family: "Poppins SemiBold";
+   position: relative;
+   height: 5rem;
+   cursor: pointer;
+}
+
+.resume-category::before {
+   position: absolute;
+   content: "";
+   left: 0;
+   background-color: var(--primary-color);
+   width: 5.5rem;
+   height: 100%;
+   border-radius: 4rem;
+   z-index: -1;
+   max-width: 26rem;
+   transition: all 0.4s ease;
+}
+
+.resume-category__show {
+   transition: all 0.4s ease;
+   color: #fff;
+}
+
+.resume-category__show::before {
+   transition: all 0.4s ease;
+   width: 100%;
+}
+
+.resume-category:first-child {
+   margin-top: 0;
+}
+
+.resume-category__icon {
+   width: 2.6rem;
+   height: 2.6rem;
+   margin-left: 0.6rem;
+   margin-right: 3.5rem;
+}
+
+.resume-explain {
+   border-left: 0.2rem solid var(--primary-color);
+   padding-left: 4rem;
+   height: 0rem;
+   overflow: hidden;
+   opacity: 0;
+   transition: all 0.4s ease;
+}
+
+.resum-explain--show {
+   height: auto;
+   overflow: visible;
+   opacity: 1;
+   transition: all 0.4s ease;
+}
+
+.explain-wrapper {
+}
+
+.explain-head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.explain-head__title {
+   font-size: 1.8rem;
+   padding-bottom: 1rem;
+   color: var(--orange);
+   position: relative;
+}
+
+.explain-head__title::before {
+   position: absolute;
+   content: "";
+   width: 1.8rem;
+   height: 1.8rem;
+   border-radius: 100%;
+   background-color: var(--primary-color);
+   left: -5.1rem;
+   top: 0.5rem;
+}
+
+.explain-head__date {
+   background-color: #f57f17;
+   box-shadow: 0 0 4rem rgb(245 127 23 / 24%);
+   padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+   border-radius: 4rem;
+   color: #fff;
+}
+
+.explain-content {
+   padding-bottom: 4rem;
+}
+
+.explain-content__title {
+   font-size: 2rem;
+}
+
+.explain-content__text {
+   color: var(--text-color-mute);
+}
+
+/* resume end */
+
 /* main end */
