@@ -11,6 +11,7 @@
          crossorigin="anonymous"
       />
       <link rel="icon" href="images-icons/app-logo.png" />
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
       <link rel="stylesheet" href="styles/app.css" />
       <link rel="stylesheet" href="styles/responsive.css" />
       <title>personal page</title>
@@ -631,7 +632,41 @@
                </div>
             </div>
          </section>
+         <section class="portfolio">
+            <div class="container">
+               <section class="all-sections-head">
+                  <h2 class="all-sections-head__title">Portfolio</h2>
+                  <p class="all-sections-head__text">Check in Our Latest Works</p>
+                  <span class="all-sections-head__line"></span>
+               </section>
+               <ul class="portfolio-list">
+                  <li class="portfolio-list__item">All Work</li>
+                  <li class="portfolio-list__item">Illustration</li>
+                  <li class="portfolio-list__item">Animation</li>
+               </ul>
+               <div class="portfolio-slider__wrapper">
+                  <!-- Slider main container -->
+                  <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images-icons/portfolio-1.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="images-icons/portfolio-2.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="images-icons/portfolio-3.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="images-icons/portfolio-1.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="images-icons/portfolio-2.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="images-icons/portfolio-3.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="images-icons/portfolio-1.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="images-icons/portfolio-2.jpg" alt="" /></div>
+                        <div class="swiper-slide"><img src="images-icons/portfolio-3.jpg" alt="" /></div>
+                     </div>
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
       </main>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
       <script src="scripts/app.js"></script>
    </body>
 </html>
