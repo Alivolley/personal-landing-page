@@ -21,6 +21,10 @@ body {
    background-color: var(--app-bg-color);
 }
 
+.body-scroll-lock {
+   overflow: hidden;
+}
+
 /* component classes start */
 
 .btn-basic {
@@ -51,11 +55,16 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: baseline;
+   background-color: var(--app-bg-color);
    box-shadow: 0 5px 70px var(--shadow-color);
    line-height: 11rem;
    padding-right: 1.5rem;
    padding-left: 1.5rem;
-   position: relative;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 3000;
 }
 
 .header__logo {
@@ -128,7 +137,7 @@ body {
 
 .menu__show {
    padding: 1.5rem 0;
-   height: 35.2rem;
+   height: 38rem;
    box-shadow: 0 -5px 25px var(--shadow-color) inset;
    transition: all 0.2s;
 }
@@ -161,7 +170,7 @@ body {
    border-bottom: 0.3rem solid var(--primary-color);
 }
 
-.active .menu__item-link {
+.menu__item--active .menu__item-link {
    color: var(--primary-color);
 }
 
@@ -173,7 +182,7 @@ body {
 
 .header-row {
    flex-direction: column;
-   margin-top: 8rem;
+   margin-top: 20rem;
    align-items: center;
 }
 
@@ -298,6 +307,7 @@ body {
    color: var(--text-color-mute);
    padding-bottom: 2.5rem;
    padding-top: 1rem;
+   text-align: center;
 }
 
 .all-sections-head__line {
@@ -660,10 +670,11 @@ body {
 
 /* resume end */
 
-/* main end */
+/* portfolio start */
 
 .portfolio {
    padding-top: 12rem;
+   padding-bottom: 14rem;
 }
 
 .portfolio-list {
@@ -718,3 +729,135 @@ body {
    width: 100%;
    height: 100%;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+   background-color: #0abeacaf;
+   border-radius: 1rem;
+   overflow: hidden;
+   transition: all 0.2s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+   background-color: #0abead;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+   color: #fff;
+   font-size: 2rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+   bottom: -7px;
+}
+
+.swiper-pagination-bullet {
+   transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+   background-color: var(--primary-color);
+   width: 1.5rem;
+   height: 1.5rem;
+   transition: all 0.3s;
+}
+
+/* portfolio end */
+
+/* pricing start */
+
+.pricing {
+   transform: skewY(-5deg);
+   box-shadow: 0 0 50px var(--shadow-color);
+   padding-bottom: 10rem;
+   padding-top: 8rem;
+}
+
+.pricing .container {
+   transform: skewY(5deg);
+}
+
+.pricing-row {
+   justify-content: center;
+}
+
+.pricing-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0 0 50px var(--shadow-color);
+   padding-bottom: 4rem;
+   /* background-color: red; */
+}
+
+.pricing-card-head {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 3rem 0;
+}
+
+.pricing-card__title {
+   font-family: "Poppins SemiBold";
+   font-size: 3.2rem;
+   color: #fff;
+}
+
+.pricing-card__price {
+   font-family: "Poppins SemiBold";
+   padding: 1rem 0;
+   color: #fff;
+   font-size: 2.6rem;
+}
+
+.pricing-card__desc {
+   color: #fff;
+   font-size: 1.7rem;
+}
+
+.pricing-card-list {
+   padding: 4rem 0 1.8rem 0;
+}
+
+.pricing-card__list-item {
+   padding: 1rem 0;
+   list-style-type: none;
+}
+
+.pricing-card-link {
+   text-decoration: none;
+   color: #fff;
+   padding: 1.2rem 4rem;
+   border-radius: 3rem;
+   font-family: "Poppins SemiBold";
+}
+
+.pricing-card-link:hover .pricing-card__link-icon {
+   animation: iconMover 0.2s alternate infinite;
+}
+
+.pricing-card__link-icon {
+   padding-left: 1rem;
+}
+
+.pricing-card__orange {
+   background-color: #ff6331;
+}
+
+.pricing-card__purple {
+   background-color: #803afb;
+}
+
+.pricing-card__pink {
+   background-color: #f5276c;
+}
+
+/* pricing end */
+
+/* main end */

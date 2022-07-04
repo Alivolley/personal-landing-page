@@ -1,5 +1,6 @@
 let $ = document;
 
+const body = $.body;
 const menuToggler = $.querySelector(".menu-toggler");
 const collapseMenu = $.querySelector(".menu");
 const menuUncollpser = $.querySelector(".menu-uncollapse");
@@ -9,6 +10,7 @@ const resumeListItems = $.querySelectorAll(".resume-category");
 const portfolioListItem = $.querySelectorAll(".portfolio-list__item");
 
 function uncollapseTheMenu() {
+   body.classList.toggle("body-scroll-lock");
    collapseMenu.classList.toggle("menu__show");
    menuCollpser.classList.toggle("menu-collapse--show");
    menuUncollpser.classList.toggle("menu-uncollapse--show");
