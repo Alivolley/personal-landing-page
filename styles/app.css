@@ -860,4 +860,122 @@ body {
 
 /* pricing end */
 
+/* contact us start */
+
+.contactus {
+   padding-top: 12rem;
+}
+
+.touch-wrapper {
+   background: url(../images-icons/map.jpg);
+   padding: 3rem 0;
+}
+
+.form-wrapper {
+   background-color: var(--app-bg-color);
+   padding: 3rem;
+   box-shadow: 0 0 50px var(--shadow-color);
+   max-width: 60rem;
+}
+
+.form-title {
+   font-family: "Poppins Bold";
+   color: var(--primary-color);
+   font-size: 2.8rem;
+}
+
+.form {
+   padding-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.form__input,
+.form__text-area {
+   border: none;
+   outline: none;
+   padding: 1rem;
+   border-radius: 1rem;
+   box-shadow: 0 0 15px var(--shadow-color);
+   font-size: 1.6rem;
+}
+
+.form__input:focus,
+.form__text-area:focus {
+   box-shadow: 0 0 10px var(--primary-color) inset;
+}
+
+.form__text-area {
+   width: 100%;
+   resize: none;
+}
+
+*::placeholder {
+   font-family: "Poppins";
+   color: var(--text-color-mute);
+}
+
+.form__map {
+   position: absolute;
+   left: -50%;
+   bottom: 50%;
+   background-color: var(--app-bg-color);
+   width: 10rem;
+   height: 10rem;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   box-shadow: 0 0 20px var(--shadow-color);
+}
+
+.form__map--svg {
+}
+
+/* contact us end */
+
 /* main end */
+
+/* footer start */
+
+.footer .container {
+   background-color: var(--app-bg-color);
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+}
+
+.footer__copy-right {
+   /* background-color: #13b6ff; */
+   text-align: center;
+}
+
+.footer__social {
+   /* background-color: #49af46; */
+   display: flex;
+   margin-bottom: 3rem;
+}
+
+.social-holder {
+   background-color: var(--text-color);
+   margin: 0.6rem;
+   color: #fff;
+   border-radius: 100%;
+   transition: all 0.2s;
+}
+
+.social-icon {
+   font-size: 2.5rem;
+   padding: 1rem;
+}
+
+.social-holder:hover {
+   background-color: var(--primary-color);
+   transform: scale(1.2);
+}
+
+/* footer end */

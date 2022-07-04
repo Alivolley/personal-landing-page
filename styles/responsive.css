@@ -73,6 +73,12 @@
       flex-direction: row;
       justify-content: center;
    }
+
+   .form__input,
+   .form__text-area {
+      padding: 2rem;
+      font-size: 1.8rem;
+   }
 }
 
 /* md */
@@ -198,6 +204,10 @@
    .services-row {
       flex-direction: row;
    }
+
+   .form-wrapper {
+      margin-left: auto;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 800px) {
@@ -255,6 +265,18 @@
    .about-us-row {
       flex-direction: row;
    }
+
+   .touch-wrapper {
+      padding: 15rem 0;
+   }
+
+   .form-wrapper {
+      position: relative;
+   }
+
+   .form__map {
+      display: flex;
+   }
 }
 
 /* xl */
@@ -304,5 +326,9 @@
 
    .menu {
       margin-right: 3rem;
+   }
+
+   .form__map {
+      left: -100%;
    }
 }
