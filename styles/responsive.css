@@ -68,6 +68,11 @@
       padding-bottom: 15rem;
       background-size: 80rem;
    }
+
+   .portfolio-list {
+      flex-direction: row;
+      justify-content: center;
+   }
 }
 
 /* md */

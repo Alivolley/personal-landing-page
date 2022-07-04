@@ -679,16 +679,33 @@ body {
 .portfolio-list__item {
    list-style: none;
    margin: 1rem 2rem;
+   padding: 0.4rem 1.7rem;
+   cursor: pointer;
+   transition: all 0.4;
+}
+
+.portfolio-list__item--active {
    border-radius: 5rem;
    background-color: var(--primary-color);
-   padding: 0.4rem 1.7rem;
+   transition: all 0.4s;
 }
 
 .portfolio-slider__wrapper {
-   background-color: red;
+   background-color: var(--app-bg-color);
 }
 
-.swiper1 {
+.mySwiper1,
+.mySwiper2,
+.mySwiper3 {
+   height: 0;
+   opacity: 0;
+   transition: all 0.3s;
+}
+
+.swiper--show {
+   height: auto;
+   opacity: 1;
+   transition: all 0.3s;
 }
 
 .swiper-wrapper {
@@ -699,4 +716,5 @@ body {
 
 .swiper-slide__img {
    width: 100%;
+   height: 100%;
 }
