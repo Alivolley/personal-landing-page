@@ -26,43 +26,57 @@
             </div>
             <nav class="menu">
                <ul class="menu__items">
-                  <li class="menu__item menu__item--active"><a href="" class="menu__item-link">Home</a></li>
-                  <li class="menu__item"><a href="" class="menu__item-link">Aboute us</a></li>
-                  <li class="menu__item"><a href="" class="menu__item-link">Resume</a></li>
-                  <li class="menu__item"><a href="" class="menu__item-link">Services</a></li>
-                  <li class="menu__item"><a href="" class="menu__item-link">Portfolio</a></li>
-                  <li class="menu__item"><a href="" class="menu__item-link">Pricing</a></li>
-                  <li class="menu__item menu__item--hide">
+                  <li class="menu__item menu__item--active" data-sections-class="home">
+                     <a href="" class="menu__item-link">Home</a>
+                  </li>
+                  <li class="menu__item" data-sections-class="about-us">
+                     <a href="" class="menu__item-link">Aboute us</a>
+                  </li>
+                  <li class="menu__item" data-sections-class="services">
+                     <a href="" class="menu__item-link">Services</a>
+                  </li>
+                  <li class="menu__item" data-sections-class="resumes">
+                     <a href="" class="menu__item-link">Resume</a>
+                  </li>
+                  <li class="menu__item" data-sections-class="portfolio">
+                     <a href="" class="menu__item-link">Portfolio</a>
+                  </li>
+                  <li class="menu__item" data-sections-class="pricing">
+                     <a href="" class="menu__item-link">Pricing</a>
+                  </li>
+                  <li class="menu__item menu__item--hide" data-sections-class="contactus">
                      <a href="" class="menu__item-link">Contact us</a>
                   </li>
                </ul>
             </nav>
          </div>
 
-         <div class="container">
-            <div class="row header-row">
-               <div class="col col-lg-5">
-                  <img src="images-icons/header-avatar-sm.jpg" alt="header-avatar" class="header-avatar" />
-               </div>
-               <div class="col col-lg-7">
-                  <div class="header-content">
-                     <h3 class="header-content__introduce">Hello, IM <span>White Alexa</span></h3>
-                     <h2 class="header-content__title">Creative Designer</h2>
-                     <p class="header-content__text">
-                        Freelancer Web/ Mobile UI/UX Designer with Motion Graphics
-                     </p>
-                     <div class="header-content__buttuns">
-                        <a href="" class="header-content__btn btn-basic">
-                           Hire Me <i class="fas fa-hands-helping header-content-icon"></i
-                        ></a>
-                        <a href="" class="header-content__btn header-content__btn--orange btn-basic">
-                           Get Resume <i class="far fa-address-card header-content-icon"></i
-                        ></a>
+         <section class="home">
+            <div class="container">
+               <div class="row header-row">
+                  <div class="col col-lg-5">
+                     <img src="images-icons/header-avatar-sm.jpg" alt="header-avatar" class="header-avatar" />
+                  </div>
+                  <div class="col col-lg-7">
+                     <div class="header-content">
+                        <h3 class="header-content__introduce">Hello, IM <span>White Alexa</span></h3>
+                        <h2 class="header-content__title">Creative Designer</h2>
+                        <p class="header-content__text">
+                           Freelancer Web/ Mobile UI/UX Designer with Motion Graphics
+                        </p>
+                        <div class="header-content__buttuns">
+                           <a href="" class="header-content__btn btn-basic">
+                              Hire Me <i class="fas fa-hands-helping header-content-icon"></i
+                           ></a>
+                           <a href="" class="header-content__btn header-content__btn--orange btn-basic">
+                              Get Resume <i class="far fa-address-card header-content-icon"></i
+                           ></a>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
+         </section>
       </header>
 
       <main class="main">
@@ -1187,6 +1201,15 @@
       <footer class="footer">
          <div class="container">
             <p class="footer__copy-right">© 2019 createuiux. All rights reserved.</p>
+
+            <div class="theme">
+               <span class="light-mode">
+                  <i class="fas fa-sun"></i>
+               </span>
+               <span class="dark-mode">
+                  <i class="fas fa-moon"></i>
+               </span>
+            </div>
             <div class="footer__social">
                <a href="" class="social-holder"><i class="social-icon fab fa-telegram-plane"></i></a>
                <a href="" class="social-holder"><i class="social-icon fab fa-whatsapp"></i></a>
