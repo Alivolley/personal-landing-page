@@ -10,6 +10,8 @@ const portfolioListItem = $.querySelectorAll(".portfolio-list__item");
 const menuItems = $.querySelectorAll(".menu__item");
 const sections = $.querySelectorAll("main > section  , header > section");
 const themeControler = $.querySelector(".theme");
+const notification = $.querySelector(".notif");
+const closeNotif = $.querySelector(".notif-close");
 const html = $.documentElement;
 
 function uncollapseTheMenu() {
@@ -69,6 +71,7 @@ function changeTheme() {
    } else {
       window.localStorage.setItem("theme", "light-mode");
    }
+   notification.classList.remove("notif--active");
 }
 
 function checkTheme() {
@@ -148,3 +151,20 @@ var swiper2 = new Swiper(".myswiper2", swiperValues);
 var swiper3 = new Swiper(".myswiper3", swiperValues);
 
 // swiper slider end
+
+// notif start
+
+function showNotification() {
+   setInterval(() => {
+      notification.classList.add("notif--active");
+   }, 5000);
+}
+
+function closeNotification() {
+   notification.classList.remove("notif--active");
+}
+
+window.addEventListener("load", showNotification);
+closeNotif.addEventListener("click", closeNotification);
+
+// notif end

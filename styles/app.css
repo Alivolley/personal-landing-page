@@ -27,6 +27,7 @@
 html {
    font-size: 10px;
    transition: all 0.4s;
+   scroll-behavior: smooth;
 }
 
 body {
@@ -1065,3 +1066,68 @@ body {
 }
 
 /* footer end */
+
+/* notif start */
+
+.notif {
+   background-color: var(--app-bg-color);
+   position: fixed;
+   bottom: 4rem;
+   right: -50%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 1.3rem;
+   width: 24.5rem;
+   border: 0.1rem solid var(--primary-color);
+   box-shadow: 0 0 20px var(--primary-color);
+   border-bottom-left-radius: 2rem;
+   border-top-left-radius: 2rem;
+   font-family: "Poppins";
+   font-size: 1.4rem;
+   z-index: 5000;
+   transition: all 0.8s;
+}
+.notif--active {
+   right: 0;
+}
+
+.notif-close {
+   border: none;
+   outline: none;
+   background-color: transparent;
+   cursor: pointer;
+   padding-bottom: 1rem;
+}
+
+.notif-icon {
+   color: #f5276c;
+   font-size: 2.5rem;
+   border-radius: 100%;
+   transition: all 0.2s;
+}
+
+.notif-icon:hover {
+   color: var(--app-bg-color);
+   background-color: #f5276c;
+}
+
+.notif-text {
+   color: var(--text-color);
+}
+
+.notif-link {
+   text-decoration: none;
+   color: #fff;
+   background-color: var(--primary-color);
+   padding: 0.8rem 1rem;
+   border-radius: 2rem;
+   font-size: 1.2rem;
+   transition: all 0.2s;
+}
+
+.notif-link:hover {
+   background-color: #0abeacc5;
+}
+
+/* notif end */
