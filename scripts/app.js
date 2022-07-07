@@ -57,7 +57,9 @@ menuItems.forEach((item) => {
 
 menuToggler.addEventListener("click", uncollapseTheMenu);
 
+// *
 // theme change start
+// *
 
 function changeTheme() {
    themeControler.classList.toggle("theme--change");
@@ -79,7 +81,9 @@ function checkTheme() {
 window.addEventListener("load", checkTheme);
 themeControler.addEventListener("click", changeTheme);
 
+// *
 // theme change end
+// *
 
 // intersectionobserver start
 
