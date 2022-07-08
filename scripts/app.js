@@ -71,7 +71,7 @@ function changeTheme() {
    } else {
       window.localStorage.setItem("theme", "light-mode");
    }
-   notification.classList.remove("notif--active");
+   closeNotification();
 }
 
 function checkTheme() {
@@ -155,7 +155,7 @@ var swiper3 = new Swiper(".myswiper3", swiperValues);
 // notif start
 
 function showNotification() {
-   setInterval(() => {
+   setTimeout(() => {
       notification.classList.add("notif--active");
    }, 5000);
 }

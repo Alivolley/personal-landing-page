@@ -1073,7 +1073,7 @@ body {
    background-color: var(--app-bg-color);
    position: fixed;
    bottom: 4rem;
-   right: -50%;
+   right: -100%;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
